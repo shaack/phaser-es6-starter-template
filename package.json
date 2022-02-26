@@ -1,0 +1,28 @@
+{
+  "name": "phaser-template-vanilla-es6",
+  "version": "1.0.0",
+  "description": "A phaser.io ES6 starter template which works without transpiling out of the box",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaack/phaser-template-vanilla-es6.git"
+  },
+  "keywords": [
+    "phaser",
+    "js",
+    "es6",
+    "game"
+  ],
+  "author": "shaack.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shaack/phaser-template-vanilla-es6/issues"
+  },
+  "homepage": "https://github.com/shaack/phaser-template-vanilla-es6#readme",
+  "dependencies": {
+    "phaser": "^3.55.2"
+  }
+}
