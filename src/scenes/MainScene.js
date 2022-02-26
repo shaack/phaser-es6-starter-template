@@ -11,14 +11,14 @@ export class MainScene extends Phaser.Scene {
     }
 
     create() {
-        const bounciness = 0.99
-        const startSpeed = 500
+        const bounciness = 1
+        const startSpeed = 200
         const screenCenterX = this.cameras.main.worldView.x + this.cameras.main.width / 2
         const screenCenterY = this.cameras.main.worldView.y + this.cameras.main.height / 2
         console.log("MainScene create")
         this.balls = []
         for (let i = 0; i < 10; i++) {
-            const size = Phaser.Math.Between(4, 30)
+            const size = Phaser.Math.Between(4, 40)
             const circle = this.add.circle(screenCenterX, screenCenterY, size, 0xffffff)
             this.physics.add.existing(circle)
             circle.body.setCollideWorldBounds(true, bounciness, bounciness)
