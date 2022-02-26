@@ -5,16 +5,15 @@
  */
 
 export class StartScene extends Phaser.Scene {
-    constructor() {
-        super({key: 'PreloadScene'})
-    }
 
     preload() {
         console.log("StartScene preload")
-        // this.load.image('phaser-logo', 'assets/img/phaser-logo.png')
+        // this.load.image('image-name', 'assets/images/image.png')
     }
 
     create() {
-        this.scene.start('MainScene')
+        console.log("StartScene create")
+        this.scene.start("Main")
     }
+
 }

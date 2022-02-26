@@ -20,9 +20,8 @@ export class Game extends Phaser.Game {
                 }
             }
         )
-        console.log(this.state)
-        // this.state.add('StartScene', StartScene, false)
-        // this.state.add('Main', MainScene, false)
-        // this.state.start('Start')
+        this.scene.add('Start', StartScene, false)
+        this.scene.add('Main', MainScene, false)
+        this.scene.start('Start')
     }
 }
