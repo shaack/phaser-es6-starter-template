@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            background-color: #222;
+        }
+        #game-container canvas {
+            display : block;
+            margin : auto;
+        }
+    </style>
+    <script src="./node_modules/phaser/dist/phaser.min.js"></script>
+    <script type="module">
+        import {Game} from "./src/Game.js"
+        const game = new Game("game-container")
+    </script>
+</head>
+<body>
+<div id="game-container"></div>
+</body>
+</html>
