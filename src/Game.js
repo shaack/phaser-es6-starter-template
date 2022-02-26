@@ -22,6 +22,6 @@ export class Game extends Phaser.Game {
         )
         this.scene.add('Start', StartScene, false)
         this.scene.add('Main', MainScene, false)
-        this.scene.start('Start')
+        this.scene.start('Main')
     }
 }
