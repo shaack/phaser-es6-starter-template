@@ -1,6 +1,6 @@
 {
   "name": "phaser-es6-starter-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A phaser.io ES6 starter template which works without transpiling out of the box",
   "main": "index.js",
   "scripts": {
