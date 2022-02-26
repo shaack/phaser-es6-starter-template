@@ -17,11 +17,17 @@ export class Game extends Phaser.Game {
                     width: 800,
                     height: 600,
                     parent: parent
+                },
+                physics: {
+                    default: 'arcade',
+                    arcade: {
+                        gravity: {y: 200}
+                    }
                 }
             }
         )
         this.scene.add('Start', StartScene, false)
         this.scene.add('Main', MainScene, false)
-        this.scene.start('Main')
+        this.scene.start('Start')
     }
 }

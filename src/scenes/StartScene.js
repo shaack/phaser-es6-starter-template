@@ -12,12 +12,12 @@ export class StartScene extends Phaser.Scene {
     }
 
     create() {
-        const screenCenterX = this.cameras.main.worldView.x + this.cameras.main.width / 2;
-        const screenCenterY = this.cameras.main.worldView.y + this.cameras.main.height / 2;
-        this.add.text(screenCenterX,screenCenterY, "Press any key").setOrigin(0.5)
+        const screenCenterX = this.cameras.main.worldView.x + this.cameras.main.width / 2
+        const screenCenterY = this.cameras.main.worldView.y + this.cameras.main.height / 2
+        this.add.text(screenCenterX, screenCenterY, "Click to start").setOrigin(0.5)
         console.log("StartScene create")
-        this.input.keyboard.on('keydown', (event) => {
-            console.log("keyup", event)
+        this.input.on("pointerdown", (event) => {
+            console.log("pointerdown", event)
             this.startMain()
         })
     }
